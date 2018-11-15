@@ -13,6 +13,14 @@ html, body {
     display: inline;
 }
 
+.txtbgrnd{
+background: black;
+opacity: 0.7;
+height: 200px;
+width: 40%;
+text-align: center;
+left: 30%;
+}
 
 .navbar {
   padding: 0.8rem;
