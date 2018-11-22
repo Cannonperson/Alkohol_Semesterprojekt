@@ -12,10 +12,24 @@
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="./assets/js/alcoholInfo.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 
 <body>
+
+    <div>
+        <div>
+            Placeholder for game!!
+        </div>
+        <div>
+            <p>Dowload the VR-version of the game <a href="url">Here!</a></p>
+            <p>Controls for the game wow</p>
+            <p>Description of game, or literally anything else here</p>
+        </div>
+    </div>
+
     <footer>
         <div class="container-fluid padding">
             <dic class="row text-center">
@@ -30,26 +44,3 @@
 </body>
 
 </html>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("alcohol");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
-
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="./assets/js/alcoholInfo.js"></script>
