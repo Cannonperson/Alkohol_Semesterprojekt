@@ -15,32 +15,53 @@
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="./assets/js/alcoholInfo.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | VRDating</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/sfad.json", {
+            onProgress: UnityProgress
+        });
+
+    </script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-<div class="container-fluid"> 
-  
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
     <span class="navbar-toggler-icon"> </span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarResponsive">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="game.html"> Spil</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="index.html"> Alkohol </a>
-      </li>
-      
-    </ul>
-  </div>
-</div>
-</nav>
-<div>
-  <h1>Her spilles SebSimulator 24/7</h1>
-   <img src="assets/images/baaajer.jpg">
-</div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="game.html"> Spil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"> Alkohol </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="webgl-content">
+        <div id="gameContainer" style="width: 960px; height: 600px"></div>
+        <div class="footer">
+            <div class="webgl-logo"></div>
+            <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+            <div class="title">VRDating</div>
+        </div>
+        <div class="text-center">
+            <p>Dowload the VR-version of the game <a href="url">Here!</a></p>
+            <p>Controls for the game wow</p>
+            <p>Description of game, or literally anything else here</p>
+        </div>
+    </div>
     <footer>
         <div class="container-fluid padding">
             <dic class="row text-center">
