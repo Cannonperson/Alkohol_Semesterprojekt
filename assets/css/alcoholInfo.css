@@ -46,6 +46,23 @@
     margin-bottom: 0px;
 }
 
+h1{
+    font-size: 30;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+h2{
+    font-size: 25;
+    margin-top: 30px;
+}
+
+p{
+    font-size: 18;
+    line-height: 1.6em;
+    padding-left: 10px;
+}
+
 .lead {
     display: block;
     margin: 0px;
